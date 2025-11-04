@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Institutional | Lakeside Trading</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #001f3f, #004d61);
+      color: white;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    body.fade-out {
+      opacity: 0;
+    }
+
+    nav.top-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.85);
+      padding: 15px 30px;
+    }
+
+    nav.top-nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.top-nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav.top-nav ul li a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0%;
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav.top-nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    .logo-container img {
+      height: 80px;
+    }
+
+    #lang-toggle {
+      background: #00e6e6;
+      border: none;
+      color: black;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      right: 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    #lang-toggle:hover {
+      background: white;
+      color: #00e6e6;
+    }
+
+    main.page-content {
+      padding: 120px 20px 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .institutional-section {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .institutional-section h2 {
+      color: #0b1e2d;
+    }
+
+    .institutional-section p {
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .contacts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      color: #0b1e2d;
+    }
+
+    .contact-card p {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .contact-card strong {
+      color: #0b1e2d;
+    }
+  </style>
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo-container">
+      <a href="index.html"><img src="Lakeside Trading Logo.png" alt="Logo"></a>
+    </div>
+    <ul>
+      <li><a href="team-development.html" data-en="Team" data-pt="Equipe">Team</a></li>
+      <li><a href="careers.html" data-en="Careers" data-pt="Carreiras">Careers</a></li>
+      <li><a href="institutional.html" data-en="Institutional" data-pt="Institucional">Institutional</a></li>
+      <li><button id="lang-toggle">Português</button></li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <h1 data-en="Institutional Trading Solutions" data-pt="Soluções de Negociação Institucional">Institutional Trading Solutions</h1>
+
+    <div class="institutional-section">
+      <h2 data-en="Partnering with Institutions" data-pt="Parceria com Instituições">Partnering with Institutions</h2>
+      <p data-en="At Lakeside Trading, we collaborate with institutional clients to provide deep liquidity, precise execution, and cutting-edge trading solutions in Brazil's ETF markets. Our proprietary technology and local market expertise empower institutions to trade efficiently and confidently."
+         data-pt="Na Lakeside Trading, colaboramos com clientes institucionais para fornecer liquidez profunda, execução precisa e soluções de negociação avançadas no mercado de ETFs do Brasil. Nossa tecnologia proprietária e expertise local permitem que as instituições negociem com eficiência e confiança.">
+        At Lakeside Trading, we collaborate with institutional clients to provide deep liquidity, precise execution, and cutting-edge trading solutions in Brazil's ETF markets. Our proprietary technology and local market expertise empower institutions to trade efficiently and confidently.
+      </p>
+    </div>
+
+    <div class="institutional-section">
+      <h2 data-en="Contacts" data-pt="Contatos">Contacts</h2>
+      <div class="contacts-container">
+        <div class="contact-card">
+          <h3>Tom Kalaway</h3>
+          <p><strong data-en="Title:" data-pt="Cargo:">Title:</strong>
+            <span data-en="Managing Partner" data-pt="Sócio Administrador">Managing Partner</span>
+          </p>
+          <p><strong data-en="Phone:" data-pt="Telefone:">Phone:</strong> +1 (847) 927-0482</p>
+          <p><strong>Email:</strong> tom@lakesidetradingllc.com</p>
+        </div>
+        <div class="contact-card">
+          <h3>Rick Clauss</h3>
+          <p><strong data-en="Title:" data-pt="Cargo:">Title:</strong>
+            <span data-en="Managing Partner" data-pt="Sócio Administrador">Managing Partner</span>
+          </p>
+          <p><strong data-en="Phone:" data-pt="Telefone:">Phone:</strong> +1 (707) 472-7047</p>
+          <p><strong>Email:</strong> rick@lakesidetradingllc.com</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('lang-toggle');
+    let currentLang = localStorage.getItem('language') || 'en';
+
+    function updateLanguage(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+      toggleBtn.textContent = lang === 'en' ? 'Português' : 'English';
+      localStorage.setItem('language', lang);
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'pt' : 'en';
+      updateLanguage(currentLang);
+    });
+
+    updateLanguage(currentLang);
+
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href.startsWith('#') && !href.startsWith('javascript:')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = 0;
+      requestAnimationFrame(() => {
+        document.body.style.transition = 'opacity 1.5s ease';
+        document.body.style.opacity = 1;
+      });
+    });
+  </script>
+</body>
+</html>

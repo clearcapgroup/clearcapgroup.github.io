@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title data-en="Lakeside Trading" data-pt="Lakeside Trading">Lakeside Trading</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #001f3f, #004d61);
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    body.fade-out {
+      opacity: 0;
+    }
+
+    header {
+      background: url('skyline.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 50px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 80px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 8px;
+      display: block;
+      border-bottom: 2px solid transparent;
+      transition: all 0.4s ease;
+      opacity: 0.85;
+    }
+
+    nav ul li a:hover {
+      border-bottom: 2px solid #00e6e6;
+      opacity: 1;
+      transform: scale(1.05);
+    }
+
+    #lang-toggle {
+      background: #00e6e6;
+      border: none;
+      color: black;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      right: 15px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    #lang-toggle:hover {
+      background: white;
+      color: black;
+    }
+
+    .hero {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 30px;
+      border-radius: 10px;
+      margin-top: 430px;
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin: 0;
+    }
+
+    .description {
+      background: rgba(0, 0, 0, 0.7);
+      margin-top: 20px;
+      padding: 20px 30px;
+      border-radius: 10px;
+      max-width: 900px;
+      color: white;
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+      background: #f5f5f5;
+      color: black;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .location-section {
+      padding: 60px 20px;
+      background: #001f3f;
+      color: white;
+      text-align: center;
+    }
+
+    .location-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .location-section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .map-container {
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="Lakeside Trading Logo.png" alt="Lakeside Trading Logo">
+      </div>
+      <ul>
+        <li><a href="team-development.html" data-en="Team" data-pt="Equipe">Team</a></li>
+        <li><a href="careers.html" data-en="Careers" data-pt="Carreiras">Careers</a></li>
+        <li><a href="institutional.html" data-en="Institutional" data-pt="Institucional">Institutional</a></li>
+        <li><button id="lang-toggle">Português</button></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Lakeside Trading</h1>
+    </div>
+    <div class="description" data-en="Lakeside Trading is a quantitative trading firm specializing in providing continuous deep liquidity across global exchanges.  Our advanced technology and robust risk management make us a leader in the space. We strive to keep markets efficient and reliable."
+         data-pt="A Lakeside Trading é uma empresa de trading quantitativo especializada em fornecer liquidez profunda contínua em bolsas globais. Nossa tecnologia avançada e gestão de risco robusta nos tornam um líder neste setor. Nos esforçamos para manter os mercados eficientes e confiáveis.">
+    </div>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h3 data-en="Quant Trading" data-pt="Negociação Quantitativa">Quant Trading</h3>
+      <p data-en="Design strategies that drive liquidity in Brazil’s ETF market." data-pt="Desenvolva estratégias que impulsionam a liquidez no mercado de ETFs do Brasil.">Design strategies that drive liquidity in Brazil’s ETF market.</p>
+    </div>
+    <div class="card">
+      <h3 data-en="Software Development" data-pt="Desenvolvimento de Software">Software Development</h3>
+      <p data-en="Build high-performance tools for trading and analytics." data-pt="Construa ferramentas de alto desempenho para negociação e análise.">Build high-performance tools for trading and analytics.</p>
+    </div>
+    <div class="card">
+      <h3 data-en="Infrastructure" data-pt="Infraestrutura">Infrastructure</h3>
+      <p data-en="Support global low-latency infrastructure operations." data-pt="Apoie operações globais de infraestrutura de baixa latência.">Support global low-latency infrastructure operations.</p>
+    </div>
+  </section>
+
+  <section class="location-section">
+    <h2 data-en="Location" data-pt="Localização">Location</h2>
+    <p data-en="Come visit us at 425 S Financial Place, Chicago, IL." data-pt="Venha nos visitar em 425 S Financial Place, Chicago, IL.">Come visit us at 425 S Financial Place, Chicago, IL.</p>
+    <div class="map-container">
+      <iframe
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.184014451315!2d-87.63529698455187!3d41.87645437235239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cba8391e36f%3A0x8a0c6632858e4b0d!2s425%20S%20Financial%20Pl%2C%20Chicago%2C%20IL%2060605!5e0!3m2!1sen!2sus!4v1717521234567"
+      ></iframe>
+    </div>
+  </section>
+
+  <script>
+    const toggleBtn = document.getElementById('lang-toggle');
+    let currentLang = localStorage.getItem('language') || 'en';
+
+    function updateLanguage(lang) {
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+      document.title = document.querySelector('title').dataset[lang];
+      toggleBtn.textContent = lang === 'en' ? 'Português' : 'English';
+      localStorage.setItem('language', lang);
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'pt' : 'en';
+      updateLanguage(currentLang);
+    });
+
+    updateLanguage(currentLang);
+
+    // Fade transition between pages
+    document.querySelectorAll('a[href]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href.startsWith('#') && !href.startsWith('javascript:')) {
+          e.preventDefault();
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500);
+        }
+      });
+    });
+
+    // Ensure fade-in on load
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = 0;
+      requestAnimationFrame(() => {
+        document.body.style.transition = 'opacity 1.5s ease';
+        document.body.style.opacity = 1;
+      });
+    });
+  </script>
+</body>
+</html>
